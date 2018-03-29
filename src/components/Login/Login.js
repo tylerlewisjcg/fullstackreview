@@ -1,15 +1,15 @@
-import React from 'react';
-import logo from './communityBank.svg';
+import React from "react";
+import logo from "./communityBank.svg";
+import "./Login.css";
 const Login = () => {
-    return (
-        <div>
-            <img src={logo}/>
-            <a></a>
-        </div>
-    )
+  return (
+    <div className="App">
+      <img src={logo} />
+      <a href={process.env.REACT_APP_LOGIN}>
+        <button>Login</button>
+      </a>
+    </div>
+  );
+};
 
-
-
-}
- 
 export default Login;
